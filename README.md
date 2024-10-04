@@ -1,5 +1,4 @@
-# MyRESTfulAPI
-Completely functional RESTful API implemented with NodeJS, allowing users to perform CRUD operations.  
+# MyRESTfulAPI  
 This is a modern CRUD RESTful API, which uses a Node.js environment, running on an Express.js server.  
 I built this API from scratch with the simple aim to deepened my understanding of how API works and to practice my knowledge in the back-end. I have had the opportunity to built it using the CRUD operations GET, POST, PATCH and DELETE), which will run the corresponding server commands. A route for each endpoint has been set up as well as a function for each query.  
 This is a great experience where I also use this project to improve my front-end skills using HTML&CSS and Bootstrap.  
