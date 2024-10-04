@@ -1,0 +1,21 @@
+<%- include("partials/header.ejs") %>
+
+        <% if (posts && posts.length > 0) { %>
+          <% posts.forEach(post => { %>
+            <div class="shadow-lg p-3 mb-5 bg-white rounded mb-4 bg-body-tertiary rounded-5 p-0">
+              <div class="container-fluid py-5 pt-3 pb-4">
+                <h2 class="display-8 fw-bold"><%= post.title %></h2>
+                <p class="text-muted">Date: <%= post.date %></p>
+                <p class="col-md-12 fs-5"><%= post.content %></p>
+                <p class="text-muted">By: <%= post.author %></p>
+                <a href="/edit/<%= post.id %>"><button class="btn btn-primary px-4 shadow-lg rounded" type="button">Edit</button></a>
+                <a href="/api/posts/delete/<%= post.id %>"><button class="btn btn-danger px-4 shadow-lg rounded" type="button">Delete</button></a>
+              </div>
+            </div>
+
+          <% }) %>
+        <% } else { %>
+          <p>No posts found!</p>
+        <% } %>
+
+<%- include("partials/footer.ejs") %>
